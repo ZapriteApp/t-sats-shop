@@ -15,12 +15,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://t-sats.com"),
   title: "T-sats Shop — a Zaprite Pay demo",
   description: "Buy a (pretend) t-shirt for $0.21 in bitcoin and see how checking out with Zaprite Pay works.",
+  // The share images come from app/opengraph-image.png and app/twitter-image.png, with their .alt.txt files.
   openGraph: {
     title: "T-sats Shop — a Zaprite Pay demo",
     description: "Buy a (pretend) t-shirt for $0.21 in bitcoin.",
     url: "https://t-sats.com",
     siteName: "T-sats Shop",
+    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "T-sats Shop — a Zaprite Pay demo",
+    description: "Buy a (pretend) t-shirt for $0.21 in bitcoin.",
+    site: "@zapriteapp",
   },
 };
 

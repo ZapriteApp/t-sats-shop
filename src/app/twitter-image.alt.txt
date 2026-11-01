@@ -1,0 +1,1 @@
+T-sats Shop: a demo site showcasing Zaprite Pay checkouts. A phone shows a T-sats Shop order in Zaprite Pay, ready to Slide to pay.
