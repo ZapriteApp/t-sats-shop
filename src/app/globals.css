@@ -1,0 +1,41 @@
+@import "tailwindcss";
+/* Font Awesome base styles go in the base layer so Tailwind size utilities can override them. */
+@import "@fortawesome/fontawesome-svg-core/styles.css" layer(base);
+
+@theme inline {
+  --font-sans: var(--font-ubuntu), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* T-sats Shop blue, from the Zaprite Pay and Zaprite P2P mockups */
+  --color-brand: #339af0;
+  --color-brand-strong: #1c7ed6;
+  --color-brand-soft: #e7f5ff;
+  --color-brand-line: #a5d8ff;
+  /* Zaprite green, kept for the "paid" tick */
+  --color-success: #20c997;
+
+  /* Zaprite Checkout greys */
+  --color-heading: #212529;
+  --color-body: #3e4656;
+  --color-muted: #868e96;
+  --color-subtle: #adb5bd;
+  --color-line: #e9ecef;
+  --color-outline: #ced4da;
+  --color-panel: #f8f9fa;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: #fff;
+    color: var(--color-body);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+}
