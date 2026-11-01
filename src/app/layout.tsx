@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 // Font Awesome's CSS is imported in globals.css, so stop it injecting styles at runtime.
@@ -28,7 +29,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${ubuntu.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         {children}
+        {/* Vercel Web Analytics and Speed Insights (collect only when deployed on Vercel). */}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
