@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { faArrowRight, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiteFooter, SiteHeader } from "@/components/brand";
 import { ShirtArt } from "@/components/shirt-art";
@@ -106,7 +106,11 @@ export default async function SuccessPage({ searchParams }: PageProps<"/success"
           ))}
         </ul>
 
-        <Link href="/" className="flex items-center gap-2 self-start text-sm font-medium text-muted hover:text-body">
+        <Link
+          href="/"
+          className="flex h-11 items-center justify-center gap-2 self-start rounded-lg bg-brand px-5 text-[15px] font-bold text-white transition-colors hover:bg-brand-strong"
+        >
+          <FontAwesomeIcon icon={faArrowLeft} className="size-3.5" />
           Back to the shop
         </Link>
       </main>

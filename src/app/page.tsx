@@ -50,7 +50,7 @@ export default function Home() {
             Tees for people who count in sats.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-body">
-            Buy any shirt for <span className="font-bold text-heading">$0.21</span> and see how a bitcoin checkout
+            Buy any &lsquo;shirt&rsquo; for <span className="font-bold text-heading">$0.21</span> and see how a bitcoin checkout
             powered by Zaprite Pay feels from the shopper&rsquo;s side. Real bitcoin payment, pretend t-shirt.
           </p>
         </section>
@@ -114,7 +114,7 @@ export default function Home() {
             <p className="mt-10 flex items-start gap-3 rounded-xl border border-brand-line bg-brand-soft px-4 py-3 text-sm leading-relaxed text-pretty text-body">
               <FontAwesomeIcon icon={faLightbulb} className="mt-1 size-3.5 shrink-0 text-brand-strong" />
               <span>
-                <span className="font-bold text-heading">Tip:</span> After your first Zaprite P2P payment tap
+                <span className="font-bold text-heading">Tip:</span> After your first Zaprite P2P payment, tap
                 &lsquo;Remember this browser&rsquo; and then try another payment. It&rsquo;s even faster!
               </span>
             </p>
