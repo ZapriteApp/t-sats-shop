@@ -15,7 +15,7 @@ const steps = [
   {
     icon: faMobileScreenButton,
     title: "Sign up for Zaprite P2P",
-    body: "Get the Zaprite P2P app and connect the bitcoin wallet you already use.",
+    body: "Get the Zaprite P2P app and connect the bitcoin wallets you already use.",
     href: "https://zapritep2p.com",
   },
   {
@@ -50,8 +50,8 @@ export default function Home() {
             Tees for people who count in sats.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-body">
-            Buy any &lsquo;shirt&rsquo; for <span className="font-bold text-heading">$0.21</span> and see how a bitcoin checkout
-            powered by Zaprite Pay feels from the shopper&rsquo;s side. Real bitcoin payment, pretend t-shirt.
+            Buy any &lsquo;shirt&rsquo; for <span className="font-bold text-heading">$0.21</span> and experience how fast a
+            bitcoin checkout powered by Zaprite Pay can be. Real bitcoin payment, pretend t-shirt.
           </p>
         </section>
 

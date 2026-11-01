@@ -37,7 +37,7 @@ export const products: Product[] = [
   {
     slug: "satoshi-t-shirt",
     name: "Satoshi T-Shirt",
-    tagline: "The classic. Heavyweight cotton, one big ₿.",
+    tagline: "The classic. Unmistakable. One big ₿.",
     price: 21,
     // Bitcoin orange
     shirt: "#f7931a",
