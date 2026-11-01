@@ -1,4 +1,10 @@
-import { faBolt, faHandPointer, faMobileScreenButton, faShirt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBolt,
+  faHandPointer,
+  faLightbulb,
+  faMobileScreenButton,
+  faShirt,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiteFooter, SiteHeader } from "@/components/brand";
 import { BuyNowButton } from "@/components/buy-now-button";
@@ -104,6 +110,14 @@ export default function Home() {
                 </li>
               ))}
             </ol>
+
+            <p className="mt-10 flex items-start gap-3 rounded-xl border border-brand-line bg-brand-soft px-4 py-3 text-sm leading-relaxed text-pretty text-body">
+              <FontAwesomeIcon icon={faLightbulb} className="mt-1 size-3.5 shrink-0 text-brand-strong" />
+              <span>
+                <span className="font-bold text-heading">Tip:</span> After your first Zaprite P2P payment tap
+                &lsquo;Remember this browser&rsquo; and then try another payment. It&rsquo;s even faster!
+              </span>
+            </p>
           </div>
         </section>
       </main>
